@@ -3,12 +3,14 @@ share: "true"
 ---
 Welcome to my website.
 
+![[Header]]
+
 [[About]]
 
-Blogs
+    Blogs
 
 ```dataview
-FROM 
+LIST FROM "/Blog"
 ```
 
 
