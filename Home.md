@@ -5,6 +5,4 @@ Welcome to my website.
 
 I'm testing out how to publish an Obsidian vault into github pages.
 
-
-
-Will this commit to git?
+[[Photo Page 1]]
