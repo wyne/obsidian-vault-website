@@ -1,6 +1,8 @@
+# Sample Code Blog
 
-```javascript
+Here's a *code* **snippet**:
+```javascript TI="Title"
 export default Thing = () => {
-return "Hello World!";
+    return "Hello World!";
 }
 ```
