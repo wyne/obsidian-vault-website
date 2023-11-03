@@ -1,17 +1,19 @@
 ---
 share: "true"
+topnav: 1
 ---
-Welcome to my website.
-
-![[Header]]
-
-[[About]]
-
-    Blogs
-
+```dataviewjs
+dv.span(await dv.io.load("_Includes/Header.md"))
+```
+## Photos
 ```dataview
-LIST FROM "/Blog"
+LIST FROM "Photos"
+```
+## Posts
+```dataview
+LIST FROM "Posts"
+WHERE published = true
 ```
 
-
-I'm testing out how to publish an Obsidian vault into github pages.
+---
+Last modified `$= dv.current().file.mtime`

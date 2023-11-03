@@ -1,3 +1,6 @@
+```dataviewjs
+dv.span(await dv.io.load("_Includes/Header.md"))
+```
 # Sample Code Blog
 
 Here's a *code* **snippet**:
