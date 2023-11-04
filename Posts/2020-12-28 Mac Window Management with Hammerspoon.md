@@ -1,10 +1,11 @@
 ---
 published: true
+title: Mac Window Management with Hammerspoon
 ---
 ```dataviewjs
 dv.span(await dv.io.load("_Includes/Header.md"))
 ```
-# Mac OSX Window Management with Hammerspoon
+# Mac Window Management with Hammerspoon
 
 [Hammerspoon](https://github.com/Hammerspoon/hammerspoon) is a really powerful but simple automation tool for OSX.
 

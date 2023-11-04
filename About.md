@@ -5,5 +5,8 @@ topnav: 2
 dv.span(await dv.io.load("_Includes/Header.md"))
 ```
 
-Here's a little bit about me
+Hi,
 
+My name is Justin Wyne (pronounced “wine”). I’m a software engineering manager at Atlassian; previously Reflektive, Twitter, StackMob, and Lawrence Livermore National Lab. 
+
+I used this site to share my experiences and learning as well as practice front end development and writing.

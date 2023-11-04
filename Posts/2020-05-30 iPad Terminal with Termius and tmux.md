@@ -1,6 +1,6 @@
 ---
 published: true
-thumbnail: "![[termius.jpeg]]"
+thumbnail: attachments/termius.jpeg
 title: iPad Terminal with Termius and tmux
 ---
 ```dataviewjs
@@ -10,9 +10,6 @@ dv.span(await dv.io.load("_Includes/Header.md"))
 Below are instructions on how to set up a pleasant terminal experience on the iPad using a remote ssh server such as your home mac computer.
 
 ![IMG_0065.png](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1590879316899-F1OGU7I6IQD9WEAKTR7O/IMG_0065.png)
-
-Preview
-
 This is a screenshot of the Termius app on iPadOS running a tmux session on my iMac.
 
 ## Connecting with Termius ssh client for iPad
@@ -38,11 +35,13 @@ Air drop the private key to your iPad and append the contents of the .pub public
 
 ## Secure your SSH by disabling password authentication
 
+```bash
 sudo -E vi /etc/ssh/sshd_config
+```
 
 And make sure the following values are set
 
-```bash
+```sh
 # To disable tunneled clear text passwords, change to no here!
 PasswordAuthentication no
 PermitEmptyPasswords no
@@ -74,7 +73,7 @@ Iâ€™ll leave it to you to set up your own perfect tmux configuration, but hereâ€
 
 In my shell config, I created a helpful one character function that will dynamically create a new tmux session or start a new one of non exist:
 
-```bash
+```sh
 t () {
 	tmux -u attach || tmux -u new
 }
