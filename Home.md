@@ -5,6 +5,7 @@ topnav: 1
 ```dataviewjs
 dv.span(await dv.io.load("_Includes/Header.md"))
 ```
+
 ## Photos
 ```dataview
 LIST FROM "Photos"
@@ -15,8 +16,8 @@ LIST FROM "Photos"
 dv.pages('"Posts"')
     .where(p => p.thumbnail !== undefined)
     .map(item => {
-        let thumb = dv.paragraph(`![[${item.thumbnail.path}|100]]`);
-        return dv.el(
+        let thumb = dv.paragraph(`![[${item.thumbnail.path}|200]]`);
+        let link = dv.el(
             "a",
             thumb,
             {
@@ -24,6 +25,7 @@ dv.pages('"Posts"')
                 cls: ["internal-link"]
             }
         )
+        return link;
     })
 ```
 
