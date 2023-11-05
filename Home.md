@@ -17,10 +17,18 @@ WHERE published = true
 ```
 
 ```dataview
-TABLE  embed(link(meta(thumbnail).path, "500")) as ""
+TABLE embed(link(meta(thumbnail).path, "500")) as ""
 FROM "Posts"
 WHERE published = true
 AND thumbnail != undefined
+```
+
+```dataviewjs
+dv.list(dv.pages('"Posts"')
+    .map(item => [
+        `${embed(link(meta(item.thumbnail).path, "500"))}`
+    ])
+)
 ```
 
 ```dataviewjs
@@ -37,8 +45,7 @@ dv.table(["Name", "image", "image2"], dv.pages('"Posts"')
     .sort(item => item.file.name, 'asc')
     .map(item => [
         item.file.link,
-        `![](${item.thumbnail}])`,
-        `![[${filePath(item.thumbnail)}]]`
+        `${embed(link(meta(item.thumbnail).path, "500"))}`
     ])
 )
 ```
