@@ -35,10 +35,10 @@ dv.list(dv.pages('"Posts"')
 
 #### JS implementation (dv.el)
 ```dataviewjs
-dv.list(dv.pages('"Posts"')
+dv.paragraph(dv.pages('"Posts"')
     .where(p => p.thumbnail !== undefined)
     .map(item => {
-        return dv.el("a", item.thumbnail)
+        return `![[${item.thumbnail}]]`
     })
 )
 ```
