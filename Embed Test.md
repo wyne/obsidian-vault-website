@@ -49,7 +49,7 @@ dv.pages('"Posts"').where(p => p.thumbnail !== undefined)
     .map(item => {
         let bg = `url('${filePath(item.thumbnail.path)}')`;
         let link = dv.span("link", {cls: ["custom-gallery-title"]});
-        return  dv.el("a", link, { cls: ["custom-gallery"], attr: {href: `${item.file.link}`, style: [`background-image: ${bg}`]}})
+        return  dv.el("a", link, { cls: ["custom-gallery", "internal-link"], attr: {href: `${item.file.link}`, style: [`background-image: ${bg}`]}})
     })
 ```
 
