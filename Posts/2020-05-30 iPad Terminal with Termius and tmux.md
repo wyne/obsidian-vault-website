@@ -28,10 +28,12 @@ ssh-keygen -t ed25519
 
 The output will be your private and public key.
 
+```
 id_ed25519
 id_ed25519.pub
+```
 
-Air drop the private key to your iPad and append the contents of the .pub public key into ~/.ssh/authorized_keys
+Air drop the private key to your iPad and append the contents of the .pub public key into `~/.ssh/authorized_keys`
 
 ## Secure your SSH by disabling password authentication
 
@@ -59,16 +61,14 @@ To go a step further with security, you can remove the risk of mishandling the p
 ![[2020-05-30 iPad Terminal with Termius and tmux-20231102202323738.webp|400]]
 
 
+![65C62B6D-075A-47A0-8A86-D2F1AFA34889_1_105_c.jpeg|400](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1590897514388-CTTI73DSCW69V7ODAYFW/65C62B6D-075A-47A0-8A86-D2F1AFA34889_1_105_c.jpeg)
 
-![65C62B6D-075A-47A0-8A86-D2F1AFA34889_1_105_c.jpeg|412](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1590897514388-CTTI73DSCW69V7ODAYFW/65C62B6D-075A-47A0-8A86-D2F1AFA34889_1_105_c.jpeg)
+![31AF7C28-16BE-4090-948E-24714D5ED2D0_4_5005_c.jpeg|400](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1590897413721-MISYJHE8OMWQ5RJG6VS8/31AF7C28-16BE-4090-948E-24714D5ED2D0_4_5005_c.jpeg)
 
-![31AF7C28-16BE-4090-948E-24714D5ED2D0_4_5005_c.jpeg|377](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1590897413721-MISYJHE8OMWQ5RJG6VS8/31AF7C28-16BE-4090-948E-24714D5ED2D0_4_5005_c.jpeg)
-
-![743DD182-9D41-4BF3-A5DC-D2F15A3B216A_4_5005_c.jpeg|509](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1590897364743-OGWNUN8N7FZ5YGX7PAJ4/743DD182-9D41-4BF3-A5DC-D2F15A3B216A_4_5005_c.jpeg)
+![743DD182-9D41-4BF3-A5DC-D2F15A3B216A_4_5005_c.jpeg|400](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1590897364743-OGWNUN8N7FZ5YGX7PAJ4/743DD182-9D41-4BF3-A5DC-D2F15A3B216A_4_5005_c.jpeg)
 
 ## Use tmux to keep your session alive between disconnects
 
-  
 I’ll leave it to you to set up your own perfect tmux configuration, but here’s a few key snippets that made it seamless for me.
 
 In my shell config, I created a helpful one character function that will dynamically create a new tmux session or start a new one of non exist:
@@ -80,7 +80,6 @@ t () {
 ```
 
 ## Other Tips
-
 ### Make vim background transparent to better match the Termius client.
 
 To do so, just add this in your vim config, below setting your colorscheme:

@@ -18,7 +18,7 @@ WHERE published = true
 ```dataview
 TABLE WITHOUT ID 
     embed(link(meta(thumbnail).path, "200")) as Thumbnail,
-    title
+    link(file.link, title) as Title
 FROM "Posts"
 WHERE published = true
 ```
