@@ -25,7 +25,7 @@ AND thumbnail != undefined
 
 JS implementation
 ```dataviewjs
-dv.list(dv.pages('"Posts"')
+dv.view(dv.pages('"Posts"')
     .where(p => p.thumbnail !== undefined)
     .map(item =>  item.thumbnail)
 )
