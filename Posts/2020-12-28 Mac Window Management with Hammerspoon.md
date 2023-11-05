@@ -1,6 +1,7 @@
 ---
 published: true
 title: Mac Window Management with Hammerspoon
+thumbnail: "![[keyboard.jpeg]]"
 ---
 ```dataviewjs
 dv.span(await dv.io.load("_Includes/Header.md"))

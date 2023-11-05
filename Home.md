@@ -14,11 +14,11 @@ LIST FROM "Photos"
 LIST WITHOUT ID link(file.path, title) FROM "Posts"
 WHERE published = true
 ```
-#### Dataview non-JS
+
 ```dataview
 TABLE WITHOUT ID 
     embed(link(meta(thumbnail).path, "200")) as Thumbnail,
-    file.link as Title
+    title
 FROM "Posts"
 WHERE published = true
 ```
