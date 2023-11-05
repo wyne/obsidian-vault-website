@@ -15,6 +15,9 @@ LIST FROM "Photos"
 LIST WITHOUT ID link(file.path, title) FROM "Posts"
 WHERE published = true
 ```
+<div>
+<div class="customer-gallery" style="background-image: `${1}`"></div>
+</div>
 #### Dataview non-JS
 ```dataview
 TABLE WITHOUT ID 
