@@ -17,12 +17,21 @@ WHERE published = true
 ```
 #### Dataview non-JS
 ```dataview
-TABLE WITHOUTlink, embed(link(meta(thumbnail).path, "200")) as Title
+TABLE WITHOUT ID 
+    embed(link(meta(thumbnail).path, "200")) as Thumbnail,
+    file.link as Title
 FROM "Posts"
 WHERE published = true
 AND thumbnail != undefined
 ```
 
+#### JS implementation
+```dataviewjs
+dv.table(dv.pages('"Posts"')
+    .where(p => p.thumbnail !== undefined)
+    .map(item => item.thumbnail)
+)
+```
 #### JS implementation
 ```dataviewjs
 dv.list(dv.pages('"Posts"')
