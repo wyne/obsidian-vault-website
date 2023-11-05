@@ -17,10 +17,10 @@ WHERE published = true
 ```
 
 ```dataview
-table WITHOUT ID link(file.path, thumbnail),
-"![[termius.jpeg)" AS "Thumbnail"
+TABLE  embed(link(meta(thumbnail).path, "500")) as ""
 FROM "Posts"
 WHERE published = true
+AND thumbnail != undefined
 ```
 
 ```dataviewjs
