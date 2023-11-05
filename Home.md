@@ -26,15 +26,25 @@ const filePath = (file) => {
 
 // Todo [PageContentService.ts](https://github.com/tokenshift/obsidian-page-gallery/blob/8a113315218ffde554d1a6ae6cdc6ee5cbbdfdc3/src/PageContentService.ts#L109)
 
-dv.table(["Name", "image"], dv.pages('"Posts"')
+dv.table(["Name", "image", "image2"], dv.pages('"Posts"')
     .sort(item => item.file.name, 'asc')
     .map(item => [
         item.file.link,
-        `![](${filePath(item.thumbnail)})`
+        `![](${item.thumbnail}])`,
+        `![[${filePath(item.thumbnail)}]]`
     ])
 )
+```
 
-dv.pages('"Posts"')
+
+```dataviewjs
+const filePath = (file) => {
+    if (file === undefined) { return "none"}
+    return file.startsWith("http") ?
+        file :
+        this.app.vault.adapter.getResourcePath(file)
+}
+dv.pages('"Posts"').where(p => p.thumbnail !== undefined)
     .sort(item => item.file.name, 'asc')
     .map(item => {
         let bg = `url('${filePath(item.thumbnail)}')`;
