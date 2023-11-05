@@ -35,10 +35,9 @@ dv.list(dv.pages('"Posts"')
 
 #### JS direct
 ```dataviewjs
-dv.paragraph(`![[termius.jpeg]]`)
+dv.paragraph("![[image.jpg]]")
 ```
 
-```
 #### JS implementation (dv.paragraph)
 ```dataviewjs
 dv.paragraph(dv.pages('"Posts"')
