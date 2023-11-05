@@ -36,19 +36,17 @@ dv.list(dv.pages('"Posts"')
 
 #### JS direct
 ```dataviewjs
-dv.paragraph('![[image.jpg]]')
+dv.paragraph('![[image.jpg|300]]')
 ```
 
-![[image.jpg]]
 
 #### JS implementation (dv.paragraph)
 ```dataviewjs
-dv.paragraph(dv.pages('"Posts"')
+dv.pages('"Posts"')
     .where(p => p.thumbnail !== undefined)
     .map(item => {
-        return `![[${item.thumbnail.path}]]`
+        return dv.paragraph(`![[${item.thumbnail.path}|100]]`)
     })
-)
 ```
 
 #### JS With `getResourcePath`
