@@ -15,42 +15,25 @@ LIST FROM "Photos"
 LIST WITHOUT ID link(file.path, title) FROM "Posts"
 WHERE published = true
 ```
-
+#### Dataview non-JS
 ```dataview
-TABLE embed(link(meta(thumbnail).path, "500")) as ""
+TABLE WITHOUTlink, embed(link(meta(thumbnail).path, "200")) as Title
 FROM "Posts"
 WHERE published = true
 AND thumbnail != undefined
 ```
 
-JS implementation
+#### JS implementation
 ```dataviewjs
-dv.view(dv.pages('"Posts"')
+dv.list(dv.pages('"Posts"')
     .where(p => p.thumbnail !== undefined)
-    .map(item =>  item.thumbnail)
+    .map(item => {
+        return dv.el("a", item.thumbnail)
+    })
 )
 ```
 
-```dataviewjs
-const filePath = (file) => {
-    if (file === undefined) { return "none"}
-    return file.startsWith("http") ?
-        file :
-        this.app.vault.adapter.getResourcePath(file)
-}
-
-// Todo [PageContentService.ts](https://github.com/tokenshift/obsidian-page-gallery/blob/8a113315218ffde554d1a6ae6cdc6ee5cbbdfdc3/src/PageContentService.ts#L109)
-
-dv.table(["Name", "image", "image2"], dv.pages('"Posts"')
-    .sort(item => item.file.name, 'asc')
-    .map(item => [
-        item.file.link,
-        `${embed(link(meta(item.thumbnail).path, "500"))}`
-    ])
-)
-```
-
-
+#### JS With `getResourcePath`
 ```dataviewjs
 const filePath = (file) => {
     if (file === undefined) { return "none"}
@@ -61,7 +44,7 @@ const filePath = (file) => {
 dv.pages('"Posts"').where(p => p.thumbnail !== undefined)
     .sort(item => item.file.name, 'asc')
     .map(item => {
-        let bg = `url('${filePath(item.thumbnail)}')`;
+        let bg = `url('${filePath(item.thumbnail.path)}')`;
         let link = dv.span("link", {cls: ["custom-gallery-title"]});
         return  dv.el("a", link, { cls: ["custom-gallery"], attr: {href: `${item.file.link}`, style: [`background-image: ${bg}`]}})
     })
