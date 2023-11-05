@@ -19,21 +19,6 @@ WHERE published = true
 AND thumbnail != undefined
 ```
 
-#### JS implementation (dv.list)
-```dataviewjs
-dv.list(dv.pages('"Posts"')
-    .where(p => p.thumbnail !== undefined)
-    .map(item => item.thumbnail)
-)
-```
-
-```dataviewjs
-dv.list(dv.pages('"Posts"')
-    .where(p => p.thumbnail !== undefined)
-    .map(item => item.thumbnail)
-)
-```
-
 #### JS direct
 ```dataviewjs
 dv.paragraph('![[image.jpg|300]]')
@@ -46,11 +31,9 @@ dv.pages('"Posts"')
     .map(item => {
         return dv.el(
             "a",
-            //dv.paragraph(`![[${item.thumbnail.path}|100]]`),
-            item.file.path,
-            { attr: { href:  item.file.path } }
+            dv.paragraph(`![[${item.thumbnail.path}|100]]`),
+            { attr: { href: item.file.path } }
         )
-        //return dv.span(dv.fileLink(item.file.path))
     })
 ```
 
