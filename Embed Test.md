@@ -48,7 +48,8 @@ dv.pages('"Posts"').where(p => p.thumbnail !== undefined)
     .sort(item => item.file.name, 'asc')
     .map(item => {
         let bg = `url('${filePath(item.thumbnail.path)}')`;
-        let link = dv.span("link", {cls: ["custom-gallery-title"]});
+        //let link = dv.span("link", {cls: ["custom-gallery-title"]});
+        let link = "Link text"
         return  dv.el("a", link, { cls: ["custom-gallery", "internal-link"], attr: {href: `${item.file.link}`, style: [`background-image: ${bg}`]}})
     })
 ```
