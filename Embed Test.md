@@ -19,10 +19,6 @@ WHERE published = true
 AND thumbnail != undefined
 ```
 
-#### JS direct
-```dataviewjs
-dv.paragraph('![[image.jpg|300]]')
-```
 
 #### JS implementation (dv.paragraph)
 ```dataviewjs

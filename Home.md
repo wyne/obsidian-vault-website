@@ -9,18 +9,22 @@ dv.span(await dv.io.load("_Includes/Header.md"))
 ```dataview
 LIST FROM "Photos"
 ```
-## Posts
-```dataview
-LIST WITHOUT ID link(file.path, title) FROM "Posts"
-WHERE published = true
-```
 
-```dataview
-TABLE WITHOUT ID 
-    embed(link(meta(thumbnail).path, "200")) as Thumbnail,
-    link(file.link, title) as Title
-FROM "Posts"
-WHERE published = true
+## Posts
+```dataviewjs
+dv.pages('"Posts"')
+    .where(p => p.thumbnail !== undefined)
+    .map(item => {
+        let thumb = dv.paragraph(`![[${item.thumbnail.path}|100]]`);
+        return dv.el(
+            "a",
+            thumb,
+            {
+                attr: { href: item.file.path },
+                cls: ["internal-link"]
+            }
+        )
+    })
 ```
 
 ---
