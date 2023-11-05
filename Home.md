@@ -23,11 +23,11 @@ WHERE published = true
 AND thumbnail != undefined
 ```
 
+JS implementation
 ```dataviewjs
 dv.list(dv.pages('"Posts"')
-    .map(item => [
-        `${embed(link(meta(item.thumbnail).path, "500"))}`
-    ])
+    .where(p => p.thumbnail !== undefined)
+    .map(item =>  item.thumbnail)
 )
 ```
 
