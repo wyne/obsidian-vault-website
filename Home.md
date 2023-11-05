@@ -33,12 +33,18 @@ dv.list(dv.pages('"Posts"')
 )
 ```
 
-#### JS implementation (dv.el)
+#### JS direct
+```dataviewjs
+dv.paragraph(`![[termius.jpeg]]`)
+```
+
+```
+#### JS implementation (dv.paragraph)
 ```dataviewjs
 dv.paragraph(dv.pages('"Posts"')
     .where(p => p.thumbnail !== undefined)
     .map(item => {
-        return `![[${item.thumbnail}]]`
+        return `![[${item.thumbnail.path}]]`
     })
 )
 ```
