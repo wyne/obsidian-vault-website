@@ -55,7 +55,7 @@ dv.pages('"Posts"').where(p => p.thumbnail !== undefined)
             attr: {
                 href: `${item.file.path}`,
                 style: [`background-image: ${bg}`],
-                data-bg: `${bg}`
+                dataBg: `${bg}`
             }
         })
     })
