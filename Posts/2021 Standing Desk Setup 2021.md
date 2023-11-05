@@ -1,7 +1,7 @@
 ---
 published: true
 title: Standing Desk 2021
-thumbnail:
+thumbnail: "![[desk.png]]"
 ---
 
 # Desk
