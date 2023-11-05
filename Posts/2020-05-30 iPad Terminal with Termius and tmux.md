@@ -1,6 +1,6 @@
 ---
 published: true
-thumbnail: attachments/termius.jpeg
+thumbnail: termius.jpeg
 title: iPad Terminal with Termius and tmux
 ---
 ```dataviewjs

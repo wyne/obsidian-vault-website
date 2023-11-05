@@ -16,6 +16,13 @@ LIST WITHOUT ID link(file.path, title) FROM "Posts"
 WHERE published = true
 ```
 
+```dataview
+table WITHOUT ID link(file.path, thumbnail),
+"![[termius.jpeg)" AS "Thumbnail"
+FROM "Posts"
+WHERE published = true
+```
+
 ```dataviewjs
 const filePath = (file) => {
     if (file === undefined) { return "none"}
