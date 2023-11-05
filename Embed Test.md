@@ -32,7 +32,10 @@ dv.pages('"Posts"')
         return dv.el(
             "a",
             dv.paragraph(`![[${item.thumbnail.path}|100]]`),
-            { attr: { href: item.file.path } }
+            {
+                attr: { href: item.file.path },
+                cls: ["internal-link"]
+            }
         )
     })
 ```
