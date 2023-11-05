@@ -35,7 +35,7 @@ dv.list(dv.pages('"Posts"')
 
 #### JS direct
 ```dataviewjs
-dv.paragraph("![[image.jpg]]")
+dv.paragraph('![[image.jpg]]')
 ```
 
 #### JS implementation (dv.paragraph)
