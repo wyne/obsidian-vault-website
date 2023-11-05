@@ -39,13 +39,12 @@ dv.list(dv.pages('"Posts"')
 dv.paragraph('![[image.jpg|300]]')
 ```
 
-
 #### JS implementation (dv.paragraph)
 ```dataviewjs
 dv.pages('"Posts"')
     .where(p => p.thumbnail !== undefined)
     .map(item => {
-        return dv.paragraph(`![[${item.thumbnail.path}|100]]`)
+        return dv.el("a", dv.paragraph(`![[${item.thumbnail.path}|100]]`)
     })
 ```
 
