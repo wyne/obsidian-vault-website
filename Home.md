@@ -25,14 +25,15 @@ WHERE published = true
 AND thumbnail != undefined
 ```
 
-#### JS implementation
+#### JS implementation (dv.list)
 ```dataviewjs
-dv.table(dv.pages('"Posts"')
+dv.list(dv.pages('"Posts"')
     .where(p => p.thumbnail !== undefined)
     .map(item => item.thumbnail)
 )
 ```
-#### JS implementation
+
+#### JS implementation (dv.el)
 ```dataviewjs
 dv.list(dv.pages('"Posts"')
     .where(p => p.thumbnail !== undefined)
