@@ -44,7 +44,12 @@ dv.paragraph('![[image.jpg|300]]')
 dv.pages('"Posts"')
     .where(p => p.thumbnail !== undefined)
     .map(item => {
-        return dv.span(dv.fileLink(item.file.path, false, dv.paragraph(`![[${item.thumbnail.path}|100]]`)))
+        return dv.el(
+            "a",
+            //dv.paragraph(`![[${item.thumbnail.path}|100]]`),
+            item.file.path,
+            { attr: { href:  item.file.path } }
+        )
         //return dv.span(dv.fileLink(item.file.path))
     })
 ```
