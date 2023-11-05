@@ -53,6 +53,7 @@ dv.pages('"Posts"').where(p => p.thumbnail !== undefined)
     })
 ```
 
+
 ```page-gallery
 # Any options given at the root level of the configuration
 # will be used as defaults for all views (but can be overridden
