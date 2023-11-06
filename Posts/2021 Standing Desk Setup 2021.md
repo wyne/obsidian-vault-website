@@ -3,6 +3,9 @@ published: true
 title: Standing Desk 2021
 thumbnail: "![[desk.png]]"
 ---
+```dataviewjs
+dv.span(await dv.io.load("_Includes/Header.md"))
+```
 
 # Desk
 

@@ -16,7 +16,7 @@ Below, I show the Lua script that I use to make Hammerspoon my basic OSX keyboar
 
 Note: The key bindings are only showing for demonstration purposes. Those overlays won’t show for you.
 
-![[hammerspoon-web.mp4#play&loop|480x297]]
+![[hammerspoon-web.mp4#loop&play|480x297]]
 ## The Hammerspoon Script
 
 ```lua
