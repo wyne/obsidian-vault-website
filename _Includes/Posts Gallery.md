@@ -1,13 +1,3 @@
----
-share: "true"
-topnav: 1
----
-```dataviewjs
-dv.span(await dv.io.load("_Includes/Header.md"))
-```
-
-This website is an experiment in using [Obsidian.md](https://obsidian.md/) as a website creation tool. It's a remake of [justinwyne.com](https://justinwyne.com) where I post about interests and share travel photos. The whole source code for this website are also available [on github](https://github.com/wyne/obsidian-vault-website).
-## Photos
 ```dataviewjs
 const filePath = (file) => {
     if (file === undefined) { return "none"}
@@ -15,8 +5,7 @@ const filePath = (file) => {
         file :
         this.app.vault.adapter.getResourcePath(file)
 }
-
-dv.pages('"Photos"').where(p => p.thumbnail !== undefined)
+dv.pages('"Posts"').where(p => p.thumbnail !== undefined)
     .sort(item => item.file.name, 'asc')
     .map(item => {
         let bg = `url('${filePath(item.thumbnail.path)}')`;
@@ -36,12 +25,3 @@ dv.pages('"Photos"').where(p => p.thumbnail !== undefined)
         )
     })
 ```
-
-## Posts
-```dataviewjs
-dv.span(await dv.io.load("_Includes/Posts Gallery.md"))
-```
-
-
----
-Last modified `$= dv.current().file.mtime`

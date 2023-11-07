@@ -5,3 +5,6 @@ topnav: 3
 dv.span(await dv.io.load("_Includes/Header.md"))
 ```
 
+```dataviewjs
+dv.span(await dv.io.load("_Includes/Photos Gallery.md"))
+```
