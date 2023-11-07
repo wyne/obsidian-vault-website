@@ -19,6 +19,22 @@ WHERE published = true
 AND thumbnail != undefined
 ```
 
+```dataviewjs
+dv.pages('"Posts"')
+    .where(p => p.thumbnail !== undefined)
+    .map(item => {
+        let thumb = dv.paragraph(`![[${item.thumbnail.path}|200]]`);
+        let link = dv.el(
+            "a",
+            thumb,
+            {
+                attr: { href: item.file.path },
+                cls: ["internal-link"]
+            }
+        )
+        return link;
+    })
+```
 
 #### JS implementation (dv.paragraph)
 ```dataviewjs
