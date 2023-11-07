@@ -9,8 +9,32 @@ banner_y: 0.736
 dv.span(await dv.io.load("_Includes/Header.md"))
 ```
 
-# Desk
 
+# Desk Setup 2021
+
+**UPLIFT Standing Desk**
+
+```cardlink
+url: https://www.upliftdesk.com/uplift-v2-standing-desk-v2-or-v2-commercial/?product_config=4865-4655-4852-3941-5854-8704
+title: "UPLIFT Standing Desk (V2 & V2-Commercial)"
+description: "The World's Best Standing Desk. 100's of Desktops, 1000's of customizations. Rated #1 by Wirecutter, 15 Year Warranty, Free Shipping, Free Returns!"
+host: www.upliftdesk.com
+image: https://cdn11.bigcommerce.com/s-l85bzww3lo/products/890/images/16878/gallery-7-UPLIFT-Bamboo-Standing-Desk__99142.1681251323.1217.655.jpg?c=2
+```
+
+This desk has programmable memory height adjustments and is  much sturdier than I expected with the C frame.
+
+**Grovemade Wood Desk Shelf**
+
+```cardlink
+url: https://grovemade.com/product/wood-desk-shelf/?initial=342
+title: "Desk Shelf"
+description: "Lift Screens & Organize Space. Available in three sizes. Designed to Improve Ergonomics & Workflow. Crafted with Premium Hardwood, Aluminum & Natural Cork. Handmade in USA. Elevate Your Work Now!"
+host: grovemade.com
+image: https://grovemade.imgix.net/https%3A%2F%2Fgrovemade.com%2Fshop-static%2Fshop%2Fvariant%2Fgrovemade-desk-shelf-matte-black-XL-galAHR-A1.jpg%3F_v%3D1693958279.3509612?auto=format&ixlib=python-1.1.2&w=1000&s=6400974e9b7be90b210505299cdd7eb2
+```
+
+This matches the Uplift walnut perfectly. The shelf fits a 13” Macbook Pro/Air perfectly (even with a Yubikey always plugged in).
 
 ```cardlink
 url: https://www.amazon.com/gp/product/B076VNFZJG/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=justinwyne-20&creative=9325&linkCode=as2&creativeASIN=B076VNFZJG&linkId=2622cd28d99b9fd59889dccc0e2dc1b3
@@ -28,30 +52,15 @@ host: www.amazon.com
 image: https://m.media-amazon.com/images/I/31SfvvMJ2xL._AC_SX679_.jpg
 ```
 
-
-![uplift.png](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1634173318233-1JMURI7G72BPEI25BWED/uplift.png)
-
-**UPLIFT Standing Desk**
-
-Programmable memory height adjustments.
-
-Much sturdier than I expected, being a C Frame.
-
-[View on Uplift](https://www.upliftdesk.com/uplift-v2-standing-desk-v2-or-v2-commercial/?product_config=4865-4655-4852-3941-5854-8704)
-
-![shelf.jpeg](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1634173263318-9N9JFI70DSVZUL7IS8HX/shelf.jpeg)
-
-Grovemade _Wood_ Desk Shelf
-
-Matches the Uplift walnut perfectly.
-
-The shelf fits a 13” Macbook Pro/Air perfectly (even with a Yubikey always plugged in)
-
-[View on Grovemade](https://grovemade.com/product/wood-desk-shelf/?initial=342)
-
 # Basics
 
-![91FH75NoCuL._AC_SL1500_.jpg](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1634170250281-7MQHB3E3C4D7ER8WSUG5/91FH75NoCuL._AC_SL1500_.jpg)
+```cardlink
+url: https://www.amazon.com/gp/product/B07XV9NQSJ/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07XV9NQSJ&linkCode=as2&tag=justinwyne-20&linkId=13c8347bd38578be06ce473a4c108080
+title: "Amazon.com: LG 27MD5KL-B 27 Inch UltraFine 5K (5120 x 2880) IPS Display with macOS Compatibility, DCI-P3 99% Color Gamut and Thunderbolt 3 Port, Black : Electronics"
+description: "Buy LG 27MD5KL-B 27 Inch UltraFine 5K (5120 x 2880) IPS Display with macOS Compatibility, DCI-P3 99% Color Gamut and Thunderbolt 3 Port, Black: LED & LCD TVs - Amazon.com ✓ FREE DELIVERY possible on eligible purchases"
+host: www.amazon.com
+image: https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1634170250281-7MQHB3E3C4D7ER8WSUG5/91FH75NoCuL._AC_SL1500_.jpg
+```
 
 Monitor: LG 27 Inch UltraFine 5k
 
@@ -63,7 +72,7 @@ Also, the built-in webcam removed my need for an additional Logitech Webcam sitt
 
 [View on Amazon](https://amzn.to/3FGd2vP)
 
-![mxvertical.jpg](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1634169444881-R6S30S3GSDO54307450U/mxvertical.jpg)
+![mxvertical.jpg|300](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1634169444881-R6S30S3GSDO54307450U/mxvertical.jpg)
 
 Mouse: Logitech MX Vertical Mouse
 
@@ -75,7 +84,7 @@ Very comfortable and functional.
 
 [View on Amazon](https://amzn.to/3mPGpTI)
 
-![satechi.jpeg](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1634171846401-NU5TTNS3V2V86TTJB8X1/satechi.jpeg)
+![satechi.jpeg|300](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1634171846401-NU5TTNS3V2V86TTJB8X1/satechi.jpeg)
 
 Keyboard: Satechi Slim X1 Bluetooth
 
@@ -83,7 +92,7 @@ I actually like the apple keyboards, but this adds four additional features that
 
 [View on Satechi](https://satechi.net/products/slim-x1-bluetooth-backlit-keyboard?variant=33573650071640)
 
-![](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/a5e08afc-7dfc-4c1e-901a-4efea2d77a98/mxmini.jpg)
+![keyboard|300](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/a5e08afc-7dfc-4c1e-901a-4efea2d77a98/mxmini.jpg)
 
 Updated Keyboard:
 
@@ -96,7 +105,7 @@ Logitech recently release a smaller version of their MX Keys. This is now my cur
 
 # Audio
 
-![vanatoo.jpg](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1634170826035-T9WXPX6AOUIVUYNTTYAH/vanatoo.jpg)
+![vanatoo.jpg|300](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1634170826035-T9WXPX6AOUIVUYNTTYAH/vanatoo.jpg)
 
 Speakers: Vanatoo T0
 
@@ -108,7 +117,7 @@ I’m glad I didn’t get the AudioEngines or anything else.
 
 [View on Amazon](https://amzn.to/3oULzAu)
 
-![wavelink.jpg](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1634171012560-8G0TFZBLKL9NEOHSBV8D/wavelink.jpg)
+![wavelink.jpg|300](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1634171012560-8G0TFZBLKL9NEOHSBV8D/wavelink.jpg)
 
 Microphone: Elgato Wave: 3 – USB Condenser Microphone
 
@@ -122,7 +131,7 @@ It’ll auto adjust the gain if it’s too loud/quiet and allows you to monitor 
 
 # Lighting
 
-![benq.jpg](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1634171727526-22ZSAS1AKW3F57QW04JS/benq.jpg)
+![benq.jpg|300](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1634171727526-22ZSAS1AKW3F57QW04JS/benq.jpg)
 
 BenQ Screenbar
 
@@ -132,7 +141,7 @@ It also allows for hue adjustment to match other lights around you.
 
 [View on Amazon](https://amzn.to/3AInkrk)
 
-![gantri.jpeg](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1634171611775-E0CQ8S5ZZQCEJBCPJ6K5/gantri.jpeg)
+![gantri.jpeg|300](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/1634171611775-E0CQ8S5ZZQCEJBCPJ6K5/gantri.jpeg)
 
 Gantri Arpeggio Table Light
 
@@ -142,7 +151,7 @@ Supports newer Hue Bulbs.
 
 # Others
 
-![](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/7c51d4d5-98fe-41f2-b29e-ff893116b089/nekmit.jpg)
+![Desk Blotter|300](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/7c51d4d5-98fe-41f2-b29e-ff893116b089/nekmit.jpg)
 
 Desk Blotter
 
@@ -150,20 +159,24 @@ Self explanatory.
 
 [View on Amazon](https://amzn.to/2ZpFOAh)
 
-![](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/2ee23967-6670-454b-bbae-ab4b3bd832c9/tb3.jpg)
+![Dock|300](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/2ee23967-6670-454b-bbae-ab4b3bd832c9/tb3.jpg)
 
 Thunderbolt 3 Dock
 
 [View on Amazon](https://amzn.to/3E5eCpe)
 
-![](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/fb96b117-5e70-43eb-b39f-3ff153e35779/gwifi.jpg)
+![wifi|300](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/fb96b117-5e70-43eb-b39f-3ff153e35779/gwifi.jpg)
 
 Google Wifi
 
 [View on Amazon](https://amzn.to/3jqK5KQ)
 
-![](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/cb128867-f106-4d61-b826-366f8b0c1390/mpencil.jpg)
+![Pencil|300](https://images.squarespace-cdn.com/content/v1/5a8687cad74cff1e0c22bf3b/cb128867-f106-4d61-b826-366f8b0c1390/mpencil.jpg)
 
 rOtring Mechanical Pencil
 
 [View on Amazon](https://amzn.to/3Bc9spr)
+
+
+---
+Last modified `$= dv.current().file.mtime`

@@ -5,8 +5,9 @@ const filePath = (file) => {
         file :
         this.app.vault.adapter.getResourcePath(file)
 }
+
 dv.pages('"Posts"').where(p => p.thumbnail !== undefined)
-    .sort(item => item.file.name, 'asc')
+    .sort(item => item.file.name, 'desc')
     .map(item => {
         let bg = `url('${filePath(item.thumbnail.path)}')`;
         let link = dv.span(item.title, {cls: ["custom-gallery-title"]});

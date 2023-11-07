@@ -2,11 +2,13 @@
 published: true
 title: Mac Window Management with Hammerspoon
 thumbnail: "![[keyboard.jpeg]]"
+banner: "![[keyboard.jpeg]]"
 ---
 ```dataviewjs
 dv.span(await dv.io.load("_Includes/Header.md"))
 ```
-# Mac Window Management with Hammerspoon
+# MacOS Window Management with Hammerspoon
+## Introduction
 
 [Hammerspoon](https://github.com/Hammerspoon/hammerspoon) is a really powerful but simple automation tool for OSX.
 
@@ -17,7 +19,7 @@ Below, I show the Lua script that I use to make Hammerspoon my basic OSX keyboar
 Note: The key bindings are only showing for demonstration purposes. Those overlays won’t show for you.
 
 ![[hammerspoon-web.mp4#loop&play|480x297]]
-## The Hammerspoon Script
+## The Script
 
 ```lua
 -- GRID
@@ -63,3 +65,7 @@ It’s pretty self explanatory from the code above, but you can customize the an
 **Ctrl + Cmd + k** : Resize window up  
 **Ctrl + Cmd + h** : Resize window left  
 **Ctrl + Cmd + l** : Resize window right
+
+
+---
+Last modified `$= dv.current().file.mtime`
