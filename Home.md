@@ -6,7 +6,7 @@ topnav: 1
 dv.span(await dv.io.load("_Includes/Header.md"))
 ```
 
-This website is an experiment in using [Obsidian.md](https://obsidian.md/) as a website creation tool. It's a remake of [justinwyne.com](https) where I post about interests and share travel photos.
+This website is an experiment in using [Obsidian.md](https://obsidian.md/) as a website creation tool. It's a remake of [justinwyne.com](https://justinwyne.com) where I post about interests and share travel photos.
 ## Photos
 ```dataview
 LIST FROM "Photos"
